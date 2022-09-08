@@ -1,0 +1,524 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+
+  --neonGreen: #39ff14;
+  --lightBlue: #15f4ee;
+  --darkBlue: #0c293d;
+  --pink: #f062a9;
+
+  color: white;
+  background-color: rgb(9, 3, 48);
+}
+
+h2 {
+  font-family: Share Tech Mono;
+}
+
+#tsparticles {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.main-container {
+  max-height: 100vh;
+}
+
+.main-title {
+  margin-bottom: 0;
+
+  font-size: 80px !important;
+  padding-bottom: 2rem;
+  text-shadow: 0 2px 4px white;
+}
+
+@media (max-width: 640px) {
+  [class*="main-title"] {
+    padding-bottom: 0;
+  }
+}
+
+.style-bpm {
+  color: var(--pink);
+  text-shadow: 0 2px 4px var(--pink);
+}
+
+@media (max-width: 768px) {
+  [class*="main-title"] {
+    font-size: 60px !important;
+  }
+}
+
+.main-para {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px !important;
+}
+
+.main-para-two {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px !important;
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  [class*="main-para"] {
+    font-size: 16px !important;
+    margin-top: 1rem;
+  }
+}
+
+.main-intro {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 640px) {
+  [class*="main-intro"] {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  [class*="main-intro"] {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.main-intro-two {
+  padding-top: 2.5rem;
+}
+
+@media (min-width: 640px) {
+  [class*="main-intro-two"] {
+    padding-top: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  [class*="main-intro-two"] {
+    padding-top: 0;
+    padding-bottom: 3.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  [class*="main-intro-two-five"] {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+}
+
+.main-intro-three {
+  max-width: 28rem;
+}
+
+@media (min-width: 640px) {
+  [class*="main-intro-three"] {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    max-width: 42rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  [class*="main-intro-three"] {
+    text-align: left;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.spotify-option-text {
+  color: #f2f2f2;
+}
+
+.spotify-container {
+  padding-top: 6rem;
+}
+
+.spotify-bpm-text {
+  text-shadow: 0 2px 6px var(--pink);
+}
+
+.fancy-span {
+  background: linear-gradient(var(--pink), #e5bdf6);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  align-self: start;
+  font-size: 3rem;
+}
+
+.audio-bpm-samples-text {
+  font-size: 2.5rem !important;
+}
+
+@media (max-width: 640px) {
+  [class*="audio-bpm-samples-text"] {
+    font-size: 1rem;
+  }
+}
+
+.audio-bg {
+  font-size: 2.5rem !important;
+  text-align: center;
+  text-shadow: 0 2px 6px var(--pink);
+}
+
+@media (max-width: 640px) {
+  [class*="audio-bg"] {
+    font-size: 1.5rem !important;
+  }
+}
+
+.audio-results-container {
+  margin-top: 1rem;
+}
+
+@media (max-width: 640px) {
+  [class*="audio-results-container"] {
+    margin-top: 0.5rem;
+  }
+}
+
+.audio-guess-results {
+  text-align: center;
+  font-size: 2.5rem !important;
+  color: var(--pink);
+}
+
+@media (max-width: 640px) {
+  [class*="audio-guess-results"] {
+    font-size: 1.5rem !important;
+  }
+}
+
+.other-guesses-title {
+  font-size: 1.5rem !important;
+}
+
+@media (max-width: 640px) {
+  [class*="other-guesses-title"] {
+    font-size: 1rem !important;
+  }
+}
+
+.other-guesses-each {
+  font-size: 1rem !important;
+}
+
+@media (max-width: 640px) {
+  [class*="other-guesses-each"] {
+    font-size: 0.8rem !important;
+  }
+}
+
+.make-white-text {
+  color: lightgray;
+}
+
+.album-art-img {
+  width: 60px;
+  height: 60px;
+}
+
+@media (max-width: 640px) {
+  [class*="spotify-container"] {
+    padding-top: 1rem;
+  }
+}
+
+.filebox-container {
+  padding-top: 10rem;
+}
+
+@media (max-width: 640px) {
+  [class*="filebox-container"] {
+    padding-top: 2rem;
+  }
+}
+
+.detail-text {
+  font-family: Share Tech Mono;
+}
+
+.details-title {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.details-container {
+  padding-top: 6rem;
+}
+
+@media (max-width: 640px) {
+  [class*="details-container"] {
+    padding-top: 2rem !important;
+  }
+}
+
+.waveform-container {
+  align-self: center;
+}
+
+@media (max-width: 640px) {
+  [class*="spotify-info-container"] {
+    padding-top: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  [class*="waveform-container"] {
+    align-self: center;
+    padding-top: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  [class*="details-container"] {
+    padding-top: 1rem;
+  }
+}
+
+/* file uploader */
+
+#form-upload {
+  height: 16rem;
+  width: 28rem;
+  max-width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+#file-upload-input {
+  display: none;
+}
+
+#file-upload-label {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 2px;
+  border-radius: 1rem;
+  border-style: dashed;
+  border-color: rgb(204, 204, 204);
+  background-color: rgba(245, 233, 233, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+#file-upload-label.drag-active {
+  background-color: rgba(245, 233, 233, 0.2);
+}
+
+.form-upload-file-btn {
+  cursor: pointer;
+  padding: 8px 16px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+  color: var(--pink);
+  background-color: rgba(245, 233, 233, 0.1);
+}
+
+.form-upload-file-btn:hover {
+  backdrop-filter: blur(5px);
+  text-decoration-line: underline;
+}
+
+#file-drag {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+/* end file uploader  */
+
+@media (max-width: 640px) {
+  [class*="upload-file-two"] {
+    padding: 50px 100px;
+  }
+}
+
+.upload-icon {
+  align-items: center;
+}
+
+.input-one {
+  display: none;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+@media (max-width: 640px) {
+  [class*="btn-container"] {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+
+.decision-btn-one {
+  display: block;
+  margin: 20px 0;
+  min-height: 50px;
+  padding: 13px 24px;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: none;
+  background-color: #f062a9;
+  background-position: top center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  transition-property: background, color;
+  color: white;
+}
+
+.decision-btn-one:hover {
+  background-color: #d4277e;
+}
+
+.decision-btn-two {
+  display: block;
+  margin: 20px 0;
+  min-height: 50px;
+  padding: 13px 24px;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: none;
+  background-color: #1db954;
+  background-position: top center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  transition-property: background, color;
+  color: white;
+}
+
+.decision-btn-two:hover {
+  background-color: #029234;
+}
+
+@media (max-width: 640px) {
+  [class*="decision-btn-one"] {
+    padding: 6.5px 20px;
+  }
+}
+
+.spot-icon-in-btn {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 4px;
+  color: #fff;
+  height: 100%;
+}
+
+.hide-btn {
+  display: none;
+}
+
+.play-btn-show {
+  width: 60px;
+  height: 20px;
+  display: block;
+  min-height: 50px;
+  border: 2px solid var(--pink);
+  border-radius: 4px;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-position: top center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  transition-property: background, color;
+}
+
+.play-btn-show:hover {
+  border: 2px solid white;
+}
+
+.audio-text-title {
+  color: lightgrey;
+  font-size: 1rem;
+}
+
+.audio-text {
+  color: var(--pink);
+  font-size: 1rem !important;
+}
+
+.make-white {
+  color: white;
+}
+
+.make-pink {
+  color: var(--pink);
+}
+
+.wont-work-text {
+  font-style: italic;
+  color: lightgray;
+}
+
+.other-guesses-list {
+  font-size: 1.5rem;
+  color: var(--pink);
+}
+
+.pulse-logo {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 0rem !important;
+  padding-top: 3rem;
+  margin-bottom: 0 !important;
+  align-self: center;
+  padding-right: 10rem;
+}
+
+@media (max-width: 640px) {
+  [class*="pulse-logo"] {
+    width: 100%;
+    height: 100%;
+
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+    padding-right: 2rem;
+  }
+}
