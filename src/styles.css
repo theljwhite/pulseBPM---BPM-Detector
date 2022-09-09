@@ -275,6 +275,7 @@ h2 {
 
 .waveform-container {
   align-self: center;
+  margin-bottom: 4rem;
 }
 
 @media (max-width: 640px) {
@@ -380,7 +381,7 @@ h2 {
 @media (max-width: 640px) {
   [class*="btn-container"] {
     flex-direction: row;
-    gap: 1rem;
+    gap: 0.5rem;
   }
 }
 

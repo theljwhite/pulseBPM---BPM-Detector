@@ -28,7 +28,6 @@ const themeForGrommet: ThemeType = {
     },
     border: {
       color: "#FFFFFF",
-      radius: "4px",
     },
   },
 };

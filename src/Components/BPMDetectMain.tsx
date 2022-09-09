@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import { Box, Text, Paragraph } from "grommet";
+import { Box, Text, Paragraph, Button } from "grommet";
 import WaveSurfer from "wavesurfer.js";
 import { Play, Pause, Upload, Spotify } from "grommet-icons";
 import pulseBPMglow from "../Images/pulseBPMglow.png";
