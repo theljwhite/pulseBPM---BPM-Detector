@@ -437,9 +437,15 @@ h2 {
   background-color: #029234;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   [class*="decision-btn-one"] {
     padding: 6.5px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  [class*="decision-btn-two"] {
+    padding: 5px 14px;
   }
 }
 
